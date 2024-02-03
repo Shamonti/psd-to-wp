@@ -3,36 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Orion</title>
   </head>
   <body>
     <header>
-      <div class="wrapper">
-        <h1 class="logo">Orion</h1>
-        <nav>
-          <h2>Main Navigation</h2>
+      <div class="top-nav">
+        <div class="black-box">
+          <div class="black-box--left">
+            <ul>
+              <li><img src="images/location-icon.png" /></li>
+              <li>1161 40th Ave NE • Calgary, Alberta</li>
+            </ul>
+          </div>
+          <div class="black-box--right">
+            <ul>
+              <li><img src="images/phone-icon.png" /></li>
+              <li>(403) 769 - 1799</li>
+            </ul>
+            <ul>
+              <li><img src="images/email-icon.png" /></li>
+              <li>Email Us</li>
+            </ul>
+          </div>
+        </div>
+        <div class="red-box">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Rentals</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Resources</a></li>
-            <li><a href="">Contact</a></li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
           </ul>
-        </nav>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="main-navigation">
+          <div class="logo"><img src="images/logo.png" alt="logo" /></div>
+          <nav>
+            <h2>Main Navigation</h2>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">Rentals</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Resources</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
     <!-- Start Homepage Content -->
     <div id="main-banner">
-      <img src="images/banner.jpeg" />
+      <div class="banner-text">
+        <h1>Protection</h1>
+        <span>Is What We Do Best</span>
+        <a href="">Learn More</a>
+      </div>
     </div>
 
     <div class="wrapper">
       <section id="home-about">
         <div>
-          <img src="images/safety.jpeg" alt="Safety Image" />
+          <img src="images/safety.jpg" alt="Safety Image" />
         </div>
         <div>
           <h2>Your One Stop Safety Shop</h2>
@@ -60,7 +113,7 @@
 
       <section id="home-links">
         <div>
-          <img src="images/sales.jpeg" alt="Link Image" />
+          <img src="images/sales.png" alt="Link Image" />
           <div>
             <i>icon</i>
             <h3>Sales</h3>
@@ -91,7 +144,7 @@
 
       <section id="home-pages">
         <div>
-          <img src="" />
+          <img src="images/certification.jpg" />
           <h3>Certification</h3>
           <p>
             We’re not just your average safety store! Our experts know what
@@ -102,7 +155,7 @@
           <a href="" class="btn">Learn More</a>
         </div>
         <div>
-          <img src="" />
+          <img src="images/callibration.jpg" />
           <h3>Calibration</h3>
           <p>
             You expect to receive accurate performance from your detectors and
