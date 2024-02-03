@@ -20,6 +20,49 @@
   }
 }
 
+#home-links {
+  .row {
+    margin: 0;
+    display: flex;
+    max-width: 100%;
+  }
+  .link-box {
+    width: calc(100% / 3);
+    height: 45rem;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--sales {
+      background-image: url('../../images/sales.png');
+    }
+    &--rentals {
+      background-image: url('../../images/rentals.png');
+    }
+    &--service {
+      background-image: url('../../images/service.png');
+    }
+
+    .heading-secondary {
+      color: $color-white;
+      padding: 2rem 4rem;
+    }
+    .paragraph {
+      color: $color-white;
+      padding: 3.5rem 5rem;
+      text-align: center;
+    }
+  }
+}
+
+//TODO remove sections below
 .section-features {
   margin: 0;
   padding: 20rem 0;
