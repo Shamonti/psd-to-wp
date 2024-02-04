@@ -12,7 +12,7 @@
   }
 
   &:hover {
-    // transform: translateY(-0.3rem);
+    transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -69,23 +69,24 @@
 .btn-txt {
   &:link,
   &:visited {
-    color: $color-primary;
+    color: $color-white;
+    background-color: $color-primary;
     display: inline-block;
     font-size: $default-font-size;
-    border-bottom: 1px solid $color-primary;
-    padding: 3px;
+    padding: 1rem 4rem;
     transition: all 0.2s;
   }
 
   &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    box-shadow: 0 3rem 2rem rgba($color-black, 0.15);
-    transform: translateY(-2px);
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    // box-shadow: 0 3rem 2rem rgba($color-black, 0.15);
+    // transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 3rem 2rem rgba($color-black, 0.15);
-    transform: translateY(0);
+    // box-shadow: 0 3rem 2rem rgba($color-black, 0.15);
+    // transform: translateY(0);
   }
 }

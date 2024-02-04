@@ -107,10 +107,8 @@
     &--button {
       display: flex;
       align-items: flex-end;
-
-      .btn {
-        width: 17rem;
-      }
+      justify-content: flex-end;
+      width: 45rem;
     }
   }
 }

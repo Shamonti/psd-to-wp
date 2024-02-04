@@ -1,79 +1,134 @@
 .footer {
-    font-size: 1.4rem;
-    color: $color-grey-light-1;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+
+  &--large {
     padding: 10rem 0;
-    background-color: $color-grey-dark-3;
+    background-image: url(../../images/footer-bg.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    ul {
+      list-style: none;
+      width: 100%;
+
+      li {
+        float: left;
+        padding-left: 1rem;
+
+        &:first-child {
+          padding-right: 2rem;
+          width: 6rem;
+        }
+      }
+    }
+
+    .text-red {
+      color: $color-primary;
+    }
+
+    .col-2-of-4 {
+      .social-icon {
+        width: 100%;
+
+        &--box {
+          display: flex;
+          align-items: flex-end;
+          gap: 1.5rem;
+        }
+      }
+      ul {
+        li {
+          float: left;
+          &:first-child {
+            padding-right: 2rem;
+            width: 12rem;
+          }
+        }
+      }
+    }
+
+    .footer-logo {
+      padding-top: 4rem;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    img {
+      width: 15rem;
+      height: auto;
+    }
 
     @include respond(tab-port) {
-        padding: 8rem 0;
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__navigation {
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    display: inline-block;
+
+    @include respond(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:first-child) {
+      padding-left: 1rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $color-grey-light-1;
+      background-color: $color-grey-dark-3;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      display: inline-block; // this is needed for the transform to work
     }
 
-    &__logo-box {
-        text-align: center;
-        margin-bottom: 8rem;
-
-        img {
-            width: 15rem;
-            height: auto;
-        }
-
-        @include respond(tab-port) {
-            margin-bottom: 6rem;
-        }
+    &:hover,
+    &:active {
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      transform: rotate(5deg) scale(1.3);
     }
+  }
 
-    &__navigation {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        display: inline-block;
+  &__copyright {
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    width: 80%;
+    float: right;
 
-        @include respond(tab-port) {
-            width: 100%;
-            text-align: center;
-        }
+    @include respond(tab-port) {
+      width: 100%;
+      float: none;
     }
-
-    &__list {
-        list-style: none;
-    }
-
-    &__item {
-        display: inline-block;
-
-        &:not(:first-child) {
-            padding-left: 1rem;
-        }
-    }
-
-    &__link {
-        text-decoration: none;
-
-        &:link,
-        &:visited {
-            color: $color-grey-light-1;
-            background-color: $color-grey-dark-3;
-            text-transform: uppercase;
-            transition: all .3s;
-            display: inline-block; // this is needed for the transform to work
-        }
-
-        &:hover,
-        &:active {
-            color: $color-primary;
-            box-shadow: 0 1rem 2rem rgba($color-black, .4);
-            transform: rotate(5deg) scale(1.3);
-        }
-    }
-
-    &__copyright {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        width: 80%;
-        float: right;
-
-        @include respond(tab-port) {
-            width: 100%;
-            float: none;
-        }
-    }
+  }
 }
