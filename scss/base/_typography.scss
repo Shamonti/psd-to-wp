@@ -57,10 +57,27 @@ a {
   }
 }
 
+.heading-tertiary {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: $color-white;
+  padding: 3rem 0 1rem 0;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
 .paragraph {
   font-size: $default-font-size;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
+}
+
+.rotated-text {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
 }

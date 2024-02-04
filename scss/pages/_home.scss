@@ -77,6 +77,44 @@
   }
 }
 
+#home-product {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../../images/product-bg.png');
+
+  .home-product {
+    &--box {
+      display: flex;
+      text-align: center;
+
+      .row {
+        padding: 5rem 2rem 0rem 5rem;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .paragraph {
+        color: $color-white;
+      }
+
+      .btn {
+        justify-content: end;
+      }
+    }
+    &--button {
+      display: flex;
+      align-items: flex-end;
+
+      .btn {
+        width: 17rem;
+      }
+    }
+  }
+}
+
 //TODO remove sections below
 .section-features {
   margin: 0;
